@@ -82,7 +82,7 @@ export default function ConferenceDetailsSection() {
                     <li key={benefit}>{benefit}</li>
                   ))}
                 </ul>
-                <a className="button fee-button" href="#registration">
+                <a className="button fee-button" href="https://s.id/IC2EST2027">
                   {plan.action}
                 </a>
               </article>

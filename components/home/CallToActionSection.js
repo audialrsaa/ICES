@@ -34,7 +34,7 @@ export default function CallToActionSection() {
               </span>
               <h3>{item.title}</h3>
               <p>{item.description}</p>
-              <a className="button button-small" href="#registration">
+              <a className="button button-small" href="https://s.id/IC2EST2027">
                 {item.action}
               </a>
             </article>

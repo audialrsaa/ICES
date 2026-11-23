@@ -41,9 +41,6 @@ export default function AboutSection() {
             <Link className="button button-blue" href="/about">
               Discover More About IC2EST &rarr;
             </Link>
-            <a className="button button-ghost" href="#tracks">
-              Explore Conference Tracks
-            </a>
           </div>
         </div>
         {homepageAssets.about ? (
