@@ -71,7 +71,7 @@ function PortraitPlaceholder({ initials, tone, circular = false, src, alt }) {
             width: "100%",
             height: "100%",
             objectFit: "cover",
-            objectPosition: "top center",
+            objectPosition: circular && alt?.includes("Rahmat") ? "center 33%" : "center 22%",
             display: "block",
           }}
         />

@@ -37,6 +37,7 @@ const invitedSpeakers = [
     topic:
       "Green Economy Integration: Transition Paths and Sustainable Policies for Developing Nations",
     image: homepageAssets.speakers.dayangAffizah || "/image/dayang.png",
+    objectPosition: "center 20%",
   },
   {
     name: "Asst. Prof. Supaphorn Akkapin",
@@ -46,6 +47,7 @@ const invitedSpeakers = [
     topic:
       "Next-Gen Biomass Conversion: Scaling Sustainable Chemical and Energy Production Systems",
     image: homepageAssets.speakers.supaphornAkkapin || "/image/supaphorn.png",
+    objectPosition: "center 20%",
   },
   {
     name: "Prof. Dr. Rahmat Budiarto",
@@ -55,6 +57,7 @@ const invitedSpeakers = [
     topic:
       "Securing Smart Infrastructure: AI-Driven Decentralized IoT Security & Privacy Frameworks",
     image: homepageAssets.speakers.rahmatBudiarto || "/image/rahmat.png",
+    objectPosition: "center 30%",
   },
 ];
 
@@ -159,9 +162,14 @@ export default function SpeakerPage() {
                       src={speaker.image}
                       alt={speaker.name}
                       width={400}
-                      height={260}
+                      height={290}
                       className="invited-photo-img"
-                      style={{ width: "100%", height: "260px", objectFit: "cover" }}
+                      style={{
+                        width: "100%",
+                        height: "100%",
+                        objectFit: "cover",
+                        objectPosition: speaker.objectPosition || "center 25%",
+                      }}
                     />
                   </div>
                   <div className="invited-card-body">
