@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { homepageAssets } from "./assets";
 
 const navigation = [
@@ -16,7 +16,20 @@ const navigation = [
 
 export default function Navbar({ activePage }) {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const pathname = usePathname();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 20) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const isItemActive = (item) => {
     if (activePage) {
@@ -31,7 +44,7 @@ export default function Navbar({ activePage }) {
   };
 
   return (
-    <header className="site-header" id="top">
+    <header className={`site-header ${scrolled ? "is-scrolled" : ""}`} id="top">
       <div className="header-inner">
         <Link className="brand" href="/" aria-label="Universitas LIA home">
           {homepageAssets.logo ? (
@@ -53,6 +66,7 @@ export default function Navbar({ activePage }) {
             </>
           )}
         </Link>
+        
         <button
           className="menu-toggle"
           type="button"
@@ -64,10 +78,11 @@ export default function Navbar({ activePage }) {
           <span />
           <span />
         </button>
+        
         <nav className={`main-nav${menuOpen ? " is-open" : ""}`} aria-label="Main navigation">
           {navigation.map((item) => (
             <Link
-              className={isItemActive(item) ? "active" : ""}
+              className={`nav-link${isItemActive(item) ? " active" : ""}`}
               href={item.href}
               key={item.label}
               onClick={() => setMenuOpen(false)}
@@ -80,4 +95,3 @@ export default function Navbar({ activePage }) {
     </header>
   );
 }
-

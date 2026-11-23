@@ -19,7 +19,7 @@ const partners = [
   },
   { name: "STMIK AL MUSLIM", style: "partner-stmik", assetKey: "stmikAlMuslim" },
   { name: "Sinta", style: "partner-sinta", assetKey: "sinta" },
-  { name: "Scopus", style: "partner-scopus", assetKey: "scopus" },
+  // Scopus dihapus
   { name: "Google Scholar", style: "partner-google", assetKey: "googleScholar" },
 ];
 
@@ -43,7 +43,7 @@ export default function PartnersSection() {
                 <Image
                   className="partner-logo-image"
                   src={homepageAssets.partners[partner.assetKey]}
-                  alt=""
+                  alt={partner.name}
                   width={160}
                   height={54}
                   sizes="(max-width: 640px) 40vw, 160px"

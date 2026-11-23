@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Speaker photo not available yet">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e8eef5"/>
+      <stop offset="1" stop-color="#c9d5e3"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#bg)"/>
+  <path d="M60 400c0-78 58-122 140-122s140 44 140 122z" fill="#5b6b82"/>
+  <path d="M168 282l32 52 32-52z" fill="#f4f6f9"/>
+  <rect x="180" y="236" width="40" height="52" rx="18" fill="#d9b8a0"/>
+  <path d="M130 170c0-48 30-78 70-78s70 30 70 78v40c0 14-8 22-20 22H150c-12 0-20-8-20-22z" fill="#3a3340"/>
+  <ellipse cx="200" cy="178" rx="52" ry="62" fill="#e6c7ae"/>
+  <path d="M148 168c4-38 30-56 58-54 24 2 42 20 46 54-18-18-40-26-60-26-16 0-32 8-44 26z" fill="#3a3340"/>
+</svg>
