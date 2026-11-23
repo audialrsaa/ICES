@@ -41,7 +41,6 @@ export default function Navbar({ activePage }) {
               alt="Universitas LIA"
               width={220}
               height={60}
-              style={{ width: "auto", height: "auto" }}
               priority
             />
           ) : (

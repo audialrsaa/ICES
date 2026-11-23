@@ -1329,6 +1329,11 @@ a {
     letter-spacing: -0.8px;
   }
 
+  .brand-image {
+    width: clamp(132px, 38vw, 165px);
+    height: auto;
+  }
+
   .menu-toggle {
     width: 42px;
     height: 42px;
