@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import SectionHeading from "./SectionHeading";
 import { homepageAssets } from "./assets";
 
@@ -51,9 +52,29 @@ function PortraitPlaceholder({ initials, tone, circular = false, src, alt }) {
       className={`portrait-placeholder portrait-${tone}${circular ? " circular" : ""}${src ? " has-photo" : ""}`}
       role={src ? undefined : "img"}
       aria-label={src ? undefined : `Temporary portrait placeholder for ${initials}`}
+      style={{
+        position: "relative",
+        overflow: "hidden",
+        width: circular ? "92px" : "100%",
+        height: circular ? "92px" : "215px",
+        margin: circular ? "0 auto 13px" : "0",
+        borderRadius: circular ? "50%" : undefined,
+      }}
     >
       {src ? (
-        <Image src={src} alt={alt} fill sizes="(max-width: 640px) 310px, 290px" />
+        <Image
+          src={src}
+          alt={alt}
+          width={circular ? 92 : 310}
+          height={circular ? 92 : 230}
+          style={{
+            width: "100%",
+            height: "100%",
+            objectFit: "cover",
+            objectPosition: "top center",
+            display: "block",
+          }}
+        />
       ) : (
         <>
           <span>{initials}</span>
@@ -110,10 +131,11 @@ export default function SpeakersSection() {
             </article>
           ))}
         </div>
-        <a className="button button-blue speaker-button" href="#speakers">
-          Explore All Speakers
-        </a>
+        <Link className="button button-blue speaker-button" href="/speaker">
+          Explore All Conference Speakers &rarr;
+        </Link>
       </div>
     </section>
   );
 }
+

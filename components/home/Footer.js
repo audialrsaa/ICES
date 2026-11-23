@@ -1,9 +1,11 @@
+import Link from "next/link";
+
 const footerLinks = [
-  ["Home", "#top"],
-  ["About", "#about"],
-  ["Schedule", "#schedule"],
-  ["Speakers", "#speakers"],
-  ["Proceeding", "#registration"],
+  ["Home", "/"],
+  ["About", "/about"],
+  ["Speakers", "/speaker"],
+  ["Schedule", "/schedule"],
+  ["Proceeding", "/proceeding"],
 ];
 
 export default function Footer() {
@@ -24,7 +26,7 @@ export default function Footer() {
             <ul className="footer-links">
               {footerLinks.map(([label, href]) => (
                 <li key={label}>
-                  <a href={href}>{label}</a>
+                  <Link href={href}>{label}</Link>
                 </li>
               ))}
             </ul>

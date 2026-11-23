@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import SectionHeading from "./SectionHeading";
 import { homepageAssets } from "./assets";
 
@@ -13,16 +14,18 @@ export default function AboutSection() {
     <section className="about-section section-pad" id="about">
       <div className="about-grid content-width">
         <div className="about-copy">
-          <SectionHeading title="About The 2nd IC2EST 2027" centered={false} />
+          <SectionHeading title="Welcome to IC2EST 2027" centered={false} />
           <p className="about-text">
             The International Conference on Education, Economics, Social
-            Science, and Technology (IC2EST) is a premier international
-            academic forum organized by Universitas LIA. This milestone event
-            brings together global researchers, innovative educators, leading
-            scholars, and pioneering industry professionals to share research
-            breakthroughs, address critical global challenges, and establish
-            interdisciplinary networks that drive modern educational and
-            technological progress.
+            Science, and Technology (IC2EST) is a premier international forum
+            organized by Universitas LIA, Jakarta, Indonesia. Building upon the
+            success of our inaugural event, the 2nd IC2EST 2027 serves as a
+            dynamic multidisciplinary platform designed for academics,
+            researchers, professionals, and students from around the globe. Our
+            core objective is to provide an inclusive space to present
+            cutting-edge research findings, share innovative ideas, and foster
+            robust academic discussions regarding contemporary global issues
+            across diverse fields of study.
           </p>
           <ul className="highlight-list">
             {highlights.map((item, index) => (
@@ -34,9 +37,14 @@ export default function AboutSection() {
               </li>
             ))}
           </ul>
-          <a className="button button-blue" href="#tracks">
-            Explore Conference Tracks
-          </a>
+          <div style={{ display: "flex", gap: "14px", flexWrap: "wrap", marginTop: "24px" }}>
+            <Link className="button button-blue" href="/about">
+              Discover More About IC2EST &rarr;
+            </Link>
+            <a className="button button-ghost" href="#tracks">
+              Explore Conference Tracks
+            </a>
+          </div>
         </div>
         {homepageAssets.about ? (
           <Image
@@ -46,6 +54,7 @@ export default function AboutSection() {
             width={520}
             height={740}
             sizes="(max-width: 640px) 100vw, 40vw"
+            priority
           />
         ) : (
           <div className="poster-placeholder" role="img" aria-label="Temporary IC2EST 2027 event poster placeholder">
@@ -86,3 +95,4 @@ export default function AboutSection() {
     </section>
   );
 }
+

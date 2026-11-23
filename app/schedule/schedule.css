@@ -1,0 +1,442 @@
+/* Schedule Hero Banner */
+.schedule-hero-banner {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse at 24% 43%, rgba(80, 122, 176, 0.55) 0, transparent 35%),
+    radial-gradient(ellipse at 75% 30%, rgba(91, 124, 169, 0.45) 0, transparent 30%),
+    linear-gradient(112deg, #1d477f 0%, #1e3d7d 45%, #143064 100%);
+  color: #fff;
+  padding: 72px 24px 80px;
+  text-align: center;
+}
+
+.schedule-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 840px;
+  margin-inline: auto;
+}
+
+.schedule-hero-tag {
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--gold, #ffbf24);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  margin: 0 0 12px;
+}
+
+.schedule-hero-title {
+  font-size: clamp(32px, 5vw, 44px);
+  font-weight: 800;
+  color: #fff;
+  margin: 0 0 12px;
+  line-height: 1.2;
+}
+
+.schedule-hero-subtitle {
+  font-size: clamp(15px, 2vw, 17px);
+  color: #dbe4ef;
+  margin: 0 0 20px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.schedule-breadcrumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #9cb6dc;
+}
+
+.schedule-breadcrumb a {
+  color: #9cb6dc;
+  text-decoration: none;
+  transition: color 150ms ease;
+}
+
+.schedule-breadcrumb a:hover {
+  color: #fff;
+}
+
+/* Key Conference Information (Logistics) */
+.schedule-logistics-section {
+  padding: 76px 0 64px;
+  background: #fff;
+}
+
+.schedule-section-header-left {
+  margin-bottom: 36px;
+}
+
+.schedule-eyebrow {
+  font-size: 13px;
+  font-weight: 800;
+  color: #0864ff;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin: 0 0 8px;
+}
+
+.schedule-section-heading {
+  font-size: clamp(26px, 3.4vw, 34px);
+  font-weight: 800;
+  color: var(--ink, #153775);
+  margin: 0;
+  line-height: 1.25;
+}
+
+.schedule-section-header-center {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.schedule-section-sub {
+  font-size: 16px;
+  color: #64748b;
+  margin: 8px 0 0;
+}
+
+.logistics-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.logistics-card {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  background: #fff;
+  border: 1px solid var(--line, #e2e8f1);
+  border-radius: 12px;
+  padding: 26px 22px;
+  box-shadow: 0 4px 18px rgba(15, 23, 42, 0.04);
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.logistics-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(21, 55, 117, 0.08);
+}
+
+.logistics-icon-box {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  background: #eaf2ff;
+  color: #0864ff;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+
+.logistics-svg {
+  width: 24px;
+  height: 24px;
+  stroke: #0864ff;
+}
+
+.logistics-card-title {
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--ink, #153775);
+  margin: 0 0 4px;
+}
+
+.logistics-card-detail {
+  font-size: 14px;
+  color: #64748b;
+  margin: 0;
+}
+
+/* Important Dates Section */
+.schedule-dates-section {
+  padding: 80px 0;
+  background: #f8fafc;
+  border-top: 1px solid var(--line, #e2e8f1);
+  border-bottom: 1px solid var(--line, #e2e8f1);
+}
+
+.dates-timeline-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 900px;
+  margin-inline: auto;
+}
+
+.dates-timeline-card {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  align-items: center;
+  gap: 32px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 24px 32px;
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.04);
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.dates-timeline-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(15, 23, 42, 0.08);
+}
+
+.dates-timeline-card.theme-blue {
+  border: 2px solid #0864ff;
+}
+
+.dates-timeline-card.theme-gold {
+  border: 2px solid #f59e0b;
+}
+
+.dates-left-col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.dates-time-text {
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--ink, #153775);
+  margin: 0;
+  white-space: nowrap;
+}
+
+.dates-badge {
+  display: inline-block;
+  font-size: 10.5px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 4px;
+}
+
+.dates-badge.badge-blue {
+  background: #0864ff;
+  color: #fff;
+}
+
+.dates-badge.badge-gold {
+  background: #ffbf24;
+  color: #143064;
+}
+
+.dates-right-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.dates-item-title {
+  font-size: 17px;
+  font-weight: 800;
+  color: var(--ink, #153775);
+  margin: 0 0 6px;
+}
+
+.dates-item-desc {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #64748b;
+  margin: 0;
+}
+
+/* Parallel Session & Room Allocation Section */
+.schedule-rooms-section {
+  padding: 84px 0;
+  background: #fff;
+}
+
+.rooms-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.room-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #fff;
+  border: 2px solid #0864ff;
+  border-radius: 12px;
+  padding: 26px 20px;
+  box-shadow: 0 4px 18px rgba(8, 100, 255, 0.04);
+  min-height: 240px;
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.room-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(8, 100, 255, 0.12);
+}
+
+.room-code-tag {
+  font-size: 11.5px;
+  font-weight: 800;
+  color: #d97706;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin: 0 0 8px;
+}
+
+.room-track-title {
+  font-size: 19px;
+  font-weight: 800;
+  color: var(--ink, #153775);
+  margin: 0 0 10px;
+}
+
+.room-topics-text {
+  font-size: 13.5px;
+  line-height: 1.55;
+  color: #64748b;
+  margin: 0 0 20px;
+  flex-grow: 1;
+}
+
+.room-location-box {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #0864ff;
+  font-size: 13.5px;
+  font-weight: 700;
+  padding-top: 14px;
+  border-top: 1px dashed var(--line, #e2e8f1);
+}
+
+.room-pin-icon {
+  width: 16px;
+  height: 16px;
+  stroke: #0864ff;
+  flex-shrink: 0;
+}
+
+/* Conference Program Section */
+.schedule-program-section {
+  padding: 84px 0 96px;
+  background: #f8fafc;
+  border-top: 1px solid var(--line, #e2e8f1);
+}
+
+.program-table-container {
+  max-width: 960px;
+  margin-inline: auto;
+  background: #fff;
+  border: 1px solid var(--line, #e2e8f1);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.05);
+}
+
+.program-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.program-table thead {
+  background: var(--navy, #1e3d7d);
+  color: #fff;
+}
+
+.program-table th {
+  padding: 18px 24px;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border: none;
+}
+
+.program-table tbody tr {
+  border-bottom: 1px solid #f1f5f9;
+  transition: background-color 150ms ease;
+}
+
+.program-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.program-table tbody tr:hover {
+  background-color: #f8fafc;
+}
+
+.program-table td {
+  padding: 20px 24px;
+  font-size: 14.5px;
+  vertical-align: middle;
+}
+
+.program-col-time {
+  color: #0864ff;
+  font-weight: 800;
+  white-space: nowrap;
+  width: 220px;
+}
+
+.program-col-session {
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.program-col-speaker {
+  color: #64748b;
+  font-size: 14px;
+}
+
+.program-col-location {
+  color: #64748b;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+/* Schedule Responsive */
+@media (max-width: 1024px) {
+  .rooms-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .logistics-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dates-timeline-card {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    padding: 20px;
+  }
+
+  .rooms-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .program-table-container {
+    overflow-x: auto;
+  }
+
+  .program-table th,
+  .program-table td {
+    padding: 14px 16px;
+    font-size: 13.5px;
+  }
+
+  .schedule-hero-banner,
+  .schedule-logistics-section,
+  .schedule-dates-section,
+  .schedule-rooms-section,
+  .schedule-program-section {
+    padding-block: 52px;
+  }
+}

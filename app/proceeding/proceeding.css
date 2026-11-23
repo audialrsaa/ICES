@@ -1,0 +1,394 @@
+/* Proceeding Hero Banner */
+.proceeding-hero-banner {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse at 24% 43%, rgba(80, 122, 176, 0.55) 0, transparent 35%),
+    radial-gradient(ellipse at 75% 30%, rgba(91, 124, 169, 0.45) 0, transparent 30%),
+    linear-gradient(112deg, #1d477f 0%, #1e3d7d 45%, #143064 100%);
+  color: #fff;
+  padding: 72px 24px 80px;
+  text-align: center;
+}
+
+.proceeding-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 840px;
+  margin-inline: auto;
+}
+
+.proceeding-hero-tag {
+  font-size: 13px;
+  font-weight: 700;
+  color: #ffbf24;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin: 0 0 12px;
+}
+
+.proceeding-hero-title {
+  font-size: clamp(32px, 5vw, 44px);
+  font-weight: 800;
+  color: #fff;
+  margin: 0 0 12px;
+  line-height: 1.2;
+}
+
+.proceeding-hero-subtitle {
+  font-size: clamp(15px, 2vw, 17px);
+  color: #dbe4ef;
+  margin: 0;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+/* Section 1: Publication & Indexing Standards */
+.standards-section {
+  padding: 80px 0;
+  background: #ffffff;
+}
+
+.standards-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 48px;
+  align-items: flex-start;
+}
+
+.standards-left h2 {
+  font-size: clamp(26px, 3.5vw, 34px);
+  font-weight: 800;
+  color: #1e3d7d;
+  margin: 0 0 24px;
+  line-height: 1.25;
+}
+
+.standards-left p {
+  font-size: 15px;
+  line-height: 1.75;
+  color: #475569;
+  margin: 0 0 20px;
+}
+
+.standards-left p:last-child {
+  margin-bottom: 0;
+}
+
+.standards-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 32px 28px;
+  box-shadow: 0 6px 20px rgba(15, 23, 42, 0.04);
+}
+
+.standards-card-title {
+  font-size: 13px;
+  font-weight: 800;
+  color: #1e3d7d;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin: 0 0 20px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.standards-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.standards-list-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14.5px;
+  font-weight: 600;
+  color: #334155;
+}
+
+.standards-icon-box {
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f59e0b;
+  flex-shrink: 0;
+}
+
+/* Section 2: Proceedings Archive */
+.archive-section {
+  padding: 84px 0 96px;
+  background: #f8fafc;
+  border-top: 1px solid #e2e8f0;
+}
+
+.section-heading-centered {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 48px;
+}
+
+.section-heading-centered h2 {
+  font-size: clamp(26px, 3.5vw, 34px);
+  font-weight: 800;
+  color: #1e3d7d;
+  margin: 0 0 12px;
+  line-height: 1.25;
+}
+
+.section-heading-accent {
+  width: 48px;
+  height: 3px;
+  background: #0864ff;
+  border-radius: 2px;
+  margin: 0 auto 16px;
+}
+
+.section-heading-centered p {
+  font-size: 15px;
+  line-height: 1.65;
+  color: #64748b;
+  margin: 0;
+}
+
+.archive-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+  max-width: 860px;
+  margin-inline: auto;
+}
+
+.archive-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 32px 28px;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.04);
+  display: flex;
+  flex-direction: column;
+}
+
+.archive-badge-upcoming {
+  background: #e0f2fe;
+  color: #0284c7;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 4px;
+  display: inline-block;
+  width: fit-content;
+  margin: 0 0 16px;
+}
+
+.archive-badge-previous {
+  background: #f1f5f9;
+  color: #64748b;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 4px;
+  display: inline-block;
+  width: fit-content;
+  margin: 0 0 16px;
+}
+
+.archive-card-title {
+  font-size: 20px;
+  font-weight: 800;
+  color: #1e3d7d;
+  margin: 0 0 4px;
+}
+
+.archive-card-volume {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: #0864ff;
+  margin: 0 0 16px;
+}
+
+.archive-card-volume.muted {
+  color: #64748b;
+}
+
+.archive-card-desc {
+  font-size: 14px;
+  line-height: 1.65;
+  color: #64748b;
+  margin: 0 0 24px;
+  flex-grow: 1;
+}
+
+.archive-meta-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: #475569;
+  margin: 0 0 24px;
+}
+
+.archive-btn-action {
+  background: #1e3d7d;
+  color: #ffffff;
+  font-size: 13.5px;
+  font-weight: 700;
+  padding: 10px 22px;
+  border-radius: 6px;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  width: fit-content;
+  transition: background 150ms ease;
+}
+
+.archive-btn-action:hover {
+  background: #143064;
+}
+
+.archive-btn-disabled {
+  background: #f1f5f9;
+  color: #94a3b8;
+  font-size: 13.5px;
+  font-weight: 700;
+  padding: 10px 22px;
+  border-radius: 6px;
+  text-align: center;
+  display: inline-block;
+  width: fit-content;
+  cursor: not-allowed;
+}
+
+/* Section 3: Research Areas & Proceedings */
+.research-areas-section {
+  padding: 84px 0 100px;
+  background: #ffffff;
+}
+
+.research-table-wrapper {
+  max-width: 1060px;
+  margin-inline: auto;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.04);
+}
+
+.research-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.research-table thead {
+  background: #4ab3e8;
+  color: #ffffff;
+}
+
+.research-table th {
+  padding: 16px 20px;
+  font-size: 12.5px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border: none;
+}
+
+.research-table tbody tr {
+  border-bottom: 1px solid #f1f5f9;
+  transition: background-color 150ms ease;
+}
+
+.research-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.research-table tbody tr:hover {
+  background-color: #f8fafc;
+}
+
+.research-table td {
+  padding: 20px 20px;
+  font-size: 14px;
+  vertical-align: top;
+  color: #475569;
+}
+
+.research-col-no {
+  width: 56px;
+  text-align: center;
+  font-weight: 700;
+  color: #334155;
+}
+
+.research-col-area {
+  width: 160px;
+  font-weight: 700;
+  color: #1e3d7d;
+}
+
+.research-col-topics {
+  width: 280px;
+}
+
+.research-topics-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 0;
+  line-height: 1.7;
+}
+
+.research-topics-list li {
+  margin-bottom: 4px;
+}
+
+.research-topics-list li:last-child {
+  margin-bottom: 0;
+}
+
+.research-col-desc {
+  line-height: 1.65;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .standards-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .archive-cards-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .research-table-wrapper {
+    overflow-x: auto;
+  }
+
+  .research-table th,
+  .research-table td {
+    padding: 14px 14px;
+    font-size: 13px;
+  }
+
+  .standards-section,
+  .archive-section,
+  .research-areas-section {
+    padding-block: 56px;
+  }
+}

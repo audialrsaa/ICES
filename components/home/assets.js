@@ -1,24 +1,25 @@
 const publicImage = (filename) => (filename ? `/image/${filename}` : null);
 
 export const homepageAssets = {
-  logo: publicImage(null),
-  heroBackground: publicImage(null),
-  about: publicImage(null),
+  logo: publicImage("logo-lia.png"),
+  heroBackground: publicImage("hero.png"),
+  about: publicImage("about.jpeg"),
   speakers: {
-    openingSpeech: publicImage(null),
-    keynote: publicImage(null),
-    dayangAffizah: publicImage(null),
-    supaphornAkkapin: publicImage(null),
-    rahmatBudiarto: publicImage(null),
+    openingSpeech: publicImage("yulidhar.png"),
+    keynote: publicImage("ilza.png"),
+    dayangAffizah: publicImage("dayang.png"),
+    supaphornAkkapin: publicImage("supaphorn.png"),
+    rahmatBudiarto: publicImage("rahmat.png"),
   },
   partners: {
-    universitasLia: publicImage(null),
-    gici: publicImage(null),
-    partnerSealOne: publicImage(null),
-    partnerSealTwo: publicImage(null),
-    stmikAlMuslim: publicImage(null),
-    sinta: publicImage(null),
-    scopus: publicImage(null),
-    googleScholar: publicImage(null),
+    universitasLia: publicImage("logo-lia.png"),
+    gici: publicImage("gici.png"),
+    partnerSealOne: publicImage("pertiwi.png"),
+    partnerSealTwo: publicImage("unindra.png"),
+    stmikAlMuslim: publicImage("stmik.png"),
+    sinta: publicImage("sinta.png"),
+    scopus: publicImage("scopus.png"),
+    googleScholar: publicImage("google.png"),
   },
 };
+

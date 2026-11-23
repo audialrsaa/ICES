@@ -1,24 +1,39 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { homepageAssets } from "./assets";
 
 const navigation = [
-  { label: "Home", href: "#top" },
-  { label: "About", href: "#about" },
-  { label: "Speaker", href: "#speakers" },
-  { label: "Schedule", href: "#schedule" },
-  { label: "Proceeding", href: "#registration" },
+  { label: "Home", href: "/" },
+  { label: "About", href: "/about" },
+  { label: "Speaker", href: "/speaker" },
+  { label: "Schedule", href: "/schedule" },
+  { label: "Proceeding", href: "/proceeding" },
 ];
 
-export default function Navbar() {
+export default function Navbar({ activePage }) {
   const [menuOpen, setMenuOpen] = useState(false);
+  const pathname = usePathname();
+
+  const isItemActive = (item) => {
+    if (activePage) {
+      return item.label.toLowerCase() === activePage.toLowerCase();
+    }
+    if (pathname?.startsWith("/about") && item.label === "About") return true;
+    if (pathname?.startsWith("/speaker") && item.label === "Speaker") return true;
+    if (pathname?.startsWith("/schedule") && item.label === "Schedule") return true;
+    if (pathname?.startsWith("/proceeding") && item.label === "Proceeding") return true;
+    if ((pathname === "/" || pathname === "" || !pathname) && item.label === "Home") return true;
+    return false;
+  };
 
   return (
     <header className="site-header" id="top">
       <div className="header-inner">
-        <a className="brand" href="#top" aria-label="Universitas LIA home">
+        <Link className="brand" href="/" aria-label="Universitas LIA home">
           {homepageAssets.logo ? (
             <Image
               className="brand-image"
@@ -26,6 +41,7 @@ export default function Navbar() {
               alt="Universitas LIA"
               width={220}
               height={60}
+              style={{ width: "auto", height: "auto" }}
               priority
             />
           ) : (
@@ -37,7 +53,7 @@ export default function Navbar() {
               <span className="brand-name">UNIVERSITAS LIA</span>
             </>
           )}
-        </a>
+        </Link>
         <button
           className="menu-toggle"
           type="button"
@@ -50,18 +66,19 @@ export default function Navbar() {
           <span />
         </button>
         <nav className={`main-nav${menuOpen ? " is-open" : ""}`} aria-label="Main navigation">
-          {navigation.map((item, index) => (
-            <a
-              className={index === 0 ? "active" : ""}
+          {navigation.map((item) => (
+            <Link
+              className={isItemActive(item) ? "active" : ""}
               href={item.href}
               key={item.label}
               onClick={() => setMenuOpen(false)}
             >
               {item.label}
-            </a>
+            </Link>
           ))}
         </nav>
       </div>
     </header>
   );
 }
+
