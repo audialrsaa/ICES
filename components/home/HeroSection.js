@@ -38,7 +38,7 @@ export default function HeroSection() {
           <span>|</span> Jakarta, Indonesia
         </p>
         <div className="hero-actions">
-          <a className="button button-gold" href="#registration">
+          <a className="button button-gold" href="https://s.id/IC2EST2027">
             Register &amp; Submit Paper
           </a>
           <a className="button button-outline" href="#about">

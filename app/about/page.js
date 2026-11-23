@@ -241,7 +241,7 @@ export default function AboutPage() {
               around the world to exchange knowledge, present innovative
               research, and build meaningful academic collaborations.
             </p>
-            <Link className="about-cta-button" href="/#registration">
+            <Link className="about-cta-button" href="https://s.id/IC2EST2027">
               Register Now
             </Link>
           </div>

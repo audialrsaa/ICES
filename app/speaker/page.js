@@ -201,7 +201,7 @@ export default function SpeakerPage() {
                 leaders from across the globe. Take the stage at IC2EST and
                 publish your findings.
               </p>
-              <Link className="speaker-cta-button" href="/#registration">
+              <Link className="speaker-cta-button" href="https://s.id/IC2EST2027">
                 Register &amp; Submit Paper
               </Link>
             </div>
