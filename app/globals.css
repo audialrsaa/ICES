@@ -70,8 +70,7 @@ a {
 }
 
 .site-header .brand-image {
-  filter: brightness(0) invert(1);
-  transition: filter 0.4s ease;
+  transition: opacity 0.3s ease;
 }
 
 /* Container menu diberi jarak yang lega (gap) */
@@ -133,7 +132,7 @@ a {
 }
 
 .site-header.is-scrolled .brand-image {
-  filter: brightness(0) saturate(100%) invert(19%) sepia(44%) saturate(1466%) hue-rotate(200deg) brightness(94%) contrast(96%);
+  /* Uses original dark logo-lia.png on scrolled white background */
 }
 
 .site-header.is-scrolled .nav-link {
@@ -1078,14 +1077,18 @@ a {
 }
 
 .partner-grid {
-  max-width: 720px;
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  max-width: 760px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   gap: 18px;
   margin: 38px auto 0;
 }
 
 .partner-logo {
+  flex: 0 0 calc(25% - 14px);
+  max-width: calc(25% - 14px);
   min-height: 62px;
   padding: 10px;
   display: flex;
@@ -1630,9 +1633,13 @@ a {
   }
 
   .partner-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 12px;
     margin-top: 28px;
+  }
+
+  .partner-logo {
+    flex: 0 0 calc(50% - 9px);
+    max-width: calc(50% - 9px);
   }
 
   .footer-grid {
