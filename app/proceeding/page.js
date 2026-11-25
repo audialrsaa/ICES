@@ -187,9 +187,7 @@ export default function ProceedingPage() {
               <div className="section-heading-accent" />
               <p>
                 Seluruh paper atau karya ilmiah yang berhasil lolos proses seleksi
-                akan diterbitkan dalam Official Conference Proceedings. Publikasi
-                prosiding akan diindeks pada berbagai leading scientific
-                databases.
+                akan diterbitkan dalam Official Conference Proceedings
               </p>
             </div>
 

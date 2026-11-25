@@ -27,9 +27,9 @@ const FEATURED_SPEAKERS = [
 
 const INVITED_SPEAKERS = [
   {
-    name: "Dr. Intan Mutia, S.T., M.M.S.I",
+    name: "Dr. Intan Mutia, S.T., M.M.SI",
     affiliation: "Universitas Indraprasta PGRI (Unindra)",
-    src: "/image/Intan Mutia_1.png",
+    src: "/image/intan-mutia.png",
     initials: "IM",
   },
   {

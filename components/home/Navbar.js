@@ -47,24 +47,14 @@ export default function Navbar({ activePage }) {
     <header className={`site-header ${scrolled ? "is-scrolled" : ""}`} id="top">
       <div className="header-inner">
         <Link className="brand" href="/" aria-label="Universitas LIA home">
-          {homepageAssets.logo ? (
-            <Image
-              className="brand-image"
-              src={homepageAssets.logo}
-              alt="Universitas LIA"
-              width={220}
-              height={60}
-              priority
-            />
-          ) : (
-            <>
-              <span className="brand-mark" aria-hidden="true">
-                <span>LIA</span>
-                <i />
-              </span>
-              <span className="brand-name">UNIVERSITAS LIA</span>
-            </>
-          )}
+          <Image
+            className="brand-image"
+            src={scrolled ? (homepageAssets.logo || "/image/logo-lia.png") : (homepageAssets.logoWhite || "/image/logo-lia-white.png")}
+            alt="Universitas LIA"
+            width={220}
+            height={60}
+            priority
+          />
         </Link>
         
         <button

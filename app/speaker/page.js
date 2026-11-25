@@ -35,7 +35,7 @@ const invitedSpeakers = [
     badge: "INVITED SPEAKER",
     affiliation: "Universitas Indraprasta PGRI (Unindra)",
     bio: "Dr. Intan Mutia is an invited speaker at IC2EST 2027, representing Universitas Indraprasta PGRI (Unindra).",
-    image: "/image/Intan Mutia_1.png",
+    image: "/image/intan-mutia.png",
     objectPosition: "center 25%",
   },
   {

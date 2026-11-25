@@ -2,6 +2,7 @@ const publicImage = (filename) => (filename ? `/image/${filename}` : null);
 
 export const homepageAssets = {
   logo: publicImage("logo-lia.png"),
+  logoWhite: publicImage("logo-lia-white.png"),
   heroBackground: publicImage("hero.png"),
   about: publicImage("about.jpeg"),
   speakers: {
