@@ -14,35 +14,33 @@ export const metadata = {
 const keyInfo = [
   {
     title: "Conference Date",
-    detail: "January 20–21, 2027",
+    detail: "January 27, 2027",
     icon: "calendar",
   },
   {
     title: "Venue",
-    detail: "Hotel Bidakara, Jakarta, Indonesia",
+    detail: "Hybrid",
     icon: "location",
   },
   {
-    title: "Time Zone",
-    detail: "Western Indonesian Time (WIB / UTC+7)",
+    title: "Time",
+    detail: "08.00-17.00",
     icon: "clock",
   },
 ];
 
 const importantDates = [
   {
-    date: "Oct 1 – 31, 2026",
+    date: " Nov 1 – Dec 15, 2026",
     badge: "SUBMISSION PERIOD",
     theme: "blue",
-    title: "Registration & Abstract Submission",
-    description:
-      "Authors are invited to submit abstracts summarizing original research works for presentation.",
+    title: "Full Paper Submission",
   },
   {
-    date: "Nov 7, 2026",
+    date: "Dec 21, 2026",
     badge: "NOTIFICATION",
     theme: "gold",
-    title: "Notification of Abstract Acceptance",
+    title: "Notification of Acceptance",
     description:
       "Acceptance notifications will be sent to corresponding authors via email with peer review feedback.",
   },
@@ -50,81 +48,81 @@ const importantDates = [
     date: "Nov 30, 2026",
     badge: "FULL PAPER",
     theme: "blue",
-    title: "Full Paper Submission Deadline",
+    title: "Camera Ready Paper Submission",
     description:
       "Submission of completed final papers incorporating reviewers' feedback for journal consideration.",
   },
+  // {
+  //   date: "Dec 15, 2026",
+  //   badge: "REGISTRATION DEADLINE",
+  //   theme: "gold",
+  //   title: "Registration & Payment Deadline",
+  //   description:
+  //     "Last date for presenters and general delegates to register and finalize fee transfers.",
+  // },
   {
-    date: "Dec 15, 2026",
-    badge: "REGISTRATION DEADLINE",
-    theme: "gold",
-    title: "Registration & Payment Deadline",
-    description:
-      "Last date for presenters and general delegates to register and finalize fee transfers.",
-  },
-  {
-    date: "Jan 20 – 21, 2027",
+    date: "Jan 27, 2027",
     badge: "CONFERENCE",
     theme: "blue",
-    title: "Main Conference",
+    title: "Main Event",
     description:
       "The main event of IC2EST 2027 featuring keynote sessions, presentations, and technical tracks.",
   },
 ];
 
-const rooms = [
-  {
-    roomCode: "ROOM A",
-    track: "Education",
-    topics: "Curriculum, Digital Learning, and Educational Management.",
-    location: "Anggrek Room",
-  },
-  {
-    roomCode: "ROOM B",
-    track: "Economics",
-    topics: "Digital Economy, Finance, Accounting, and Entrepreneurship.",
-    location: "Melati Room",
-  },
-  {
-    roomCode: "ROOM C",
-    track: "Social Science",
-    topics: "Communication, Law, Public Policy, and Language Studies.",
-    location: "Kenanga Room",
-  },
-  {
-    roomCode: "ROOM D",
-    track: "Technology",
-    topics: "Information Systems, Software, Applied Tech, Data Science & AI.",
-    location: "Cempaka Room",
-  },
-];
+// const rooms = [
+//   {
+//     roomCode: "ROOM A",
+//     track: "Education",
+//     topics: "Curriculum, Digital Learning, and Educational Management.",
+//     location: "Anggrek Room",
+//   },
+//   {
+//     roomCode: "ROOM B",
+//     track: "Economics",
+//     topics: "Digital Economy, Finance, Accounting, and Entrepreneurship.",
+//     location: "Melati Room",
+//   },
+//   {
+//     roomCode: "ROOM C",
+//     track: "Social Science",
+//     topics: "Communication, Law, Public Policy, and Language Studies.",
+//     location: "Kenanga Room",
+//   },
+//   {
+//     roomCode: "ROOM D",
+//     track: "Technology",
+//     topics: "Information Systems, Software, Applied Tech, Data Science & AI.",
+//     location: "Cempaka Room",
+//   },
+// ];
 
-const programSchedule = [
-  {
-    time: "08:30 AM - 09:30 AM",
-    session: "Registration & Morning Reception",
-    speaker: "Organizing Committee",
-    location: "Main Lobby Entrance",
-  },
-  {
-    time: "09:30 AM - 10:00 AM",
-    session: "Opening Ceremony & Welcome Address",
-    speaker: "Dr. Sarah Jenkins (General Chair)",
-    location: "Main Auditorium",
-  },
-  {
-    time: "10:00 AM - 11:30 AM",
-    session: "Keynote Speech: Sustainable Tech Innovations",
-    speaker: "Prof. Marcus Vance (MIT)",
-    location: "Main Auditorium",
-  },
-  {
-    time: "11:30 AM - 01:00 PM",
-    session: "Parallel Sessions: Track A (Energy) & Track B (IT)",
-    speaker: "Session Chairs & Presenters",
-    location: "Rooms 301 & 302",
-  },
-];
+// const programSchedule = [
+//   {
+//     time: "08:30 AM - 09:30 AM",
+//     session: "Registration & Morning Reception",
+//     speaker: "Organizing Committee",
+//     location: "Main Lobby Entrance",
+//   },
+//   {
+//     time: "09:30 AM - 10:00 AM",
+//     session: "Opening Ceremony & Welcome Address",
+//     speaker: "Dr. Sarah Jenkins (General Chair)",
+//     location: "Main Auditorium",
+//   },
+//   {
+//     time: "10:00 AM - 11:30 AM",
+//     session: "Keynote Speech: Sustainable Tech Innovations",
+//     speaker: "Prof. Marcus Vance (MIT)",
+//     location: "Main Auditorium",
+//   },
+//   {
+//     time: "11:30 AM - 01:00 PM",
+//     session: "Parallel Sessions: Track A (Energy) & Track B (IT)",
+//     speaker: "Session Chairs & Presenters",
+//     location: "Rooms 301 & 302",
+//   },
+// ];
 
 export default function SchedulePage() {
   return (
@@ -208,7 +206,7 @@ export default function SchedulePage() {
           </div>
         </section>
 
-        {/* Section 3: Parallel Session & Room Allocation */}
+        {/* Section 3: Parallel Session & Room Allocation
         <section className="schedule-rooms-section">
           <div className="content-width">
             <div className="schedule-section-header-center">
@@ -235,9 +233,9 @@ export default function SchedulePage() {
               ))}
             </div>
           </div>
-        </section>
+        </section> */}
 
-        {/* Section 4: Conference Program */}
+        {/* Section 4: Conference Program
         <section className="schedule-program-section">
           <div className="content-width">
             <div className="schedule-section-header-center">
@@ -270,7 +268,7 @@ export default function SchedulePage() {
               </table>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Section 5: Academic Partners */}
         <PartnersSection />
