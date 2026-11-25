@@ -24,7 +24,7 @@ const keyInfo = [
   },
   {
     title: "Time",
-    detail: "08.00-17.00",
+    detail: "08.00 AM-05.00 PM",
     icon: "clock",
   },
 ];

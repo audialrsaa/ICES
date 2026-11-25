@@ -76,7 +76,7 @@ export default function AboutSection() {
               </div>
               <div>
                 <b>Date and Time</b>
-                <span>January 27, 2027</span>
+                <span>January 27th, 2027</span>
                 <span>Hybrid</span>
                 <span>Registration &amp; Payment</span>
               </div>

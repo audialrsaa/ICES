@@ -149,7 +149,7 @@ export default function ProceedingPage() {
                 </p>
                 <div className="archive-meta-row">
                   <Icon name="calendar" width={16} height={16} />
-                  <span>January 20–21, 2027</span>
+                  <span>January 27th, 2027</span>
                 </div>
                 <Link className="archive-btn-action" href="/schedule">
                   View Schedule
