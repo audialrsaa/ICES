@@ -42,8 +42,7 @@ export default function Footer() {
           <div>
             <h3>Venue Location</h3>
             <p>
-              Hotel Bidakara Jakarta Jl. Gatot Subroto No.Kav. 71–73,
-              Pancoran, Jakarta Selatan, 12870, Indonesia.
+              Hybrid
             </p>
           </div>
         </div>
