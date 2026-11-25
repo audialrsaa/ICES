@@ -1668,3 +1668,12 @@ a {
     transition-duration: 0.01ms !important;
   }
 }
+
+.archive-meta-row sup,
+.about-section sup,
+.hero-date sup,
+.poster-placeholder sup {
+  font-size: 0.65em;
+  vertical-align: super;
+  line-height: 0;
+}
