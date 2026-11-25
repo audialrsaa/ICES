@@ -35,7 +35,7 @@ const INVITED_SPEAKERS = [
   {
     name: "Dr. Risna Saswati, M.Hum.",
     affiliation: "Universitas LIA",
-    src: "/image/plc.jpg",
+    src: "/image/Risna.png",
     initials: "RS",
   },
 ];

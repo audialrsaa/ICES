@@ -43,7 +43,7 @@ const invitedSpeakers = [
     badge: "INVITED SPEAKER",
     affiliation: "Universitas LIA",
     bio: "Dr. Risna Saswati is an invited speaker at IC2EST 2027, representing Universitas LIA.",
-    image: "/image/anonymous-female.png",
+    image: "/image/Risna.png",
     objectPosition: "center 25%",
   },
 ];
