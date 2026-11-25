@@ -76,8 +76,8 @@ export default function AboutSection() {
               </div>
               <div>
                 <b>Date and Time</b>
-                <span>January 20–21, 2027</span>
-                <span>Hotel Bidakara, Jakarta</span>
+                <span>January 27, 2027</span>
+                <span>Hybrid</span>
                 <span>Registration &amp; Payment</span>
               </div>
             </div>
